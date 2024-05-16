@@ -2,8 +2,11 @@ import Button from '../Button/Button';
 import { FaPhone } from 'react-icons/fa6';
 import { BiSolidContact } from 'react-icons/bi';
 import s from './Contacts.module.css';
+import { useDispatch } from 'react-redux';
+import { deleteContact } from '../../redux/contactsSlice';
 
-const Contact = ({ contact, handleDeleteContact }) => {
+const Contact = ({ contact }) => {
+  const dispatch = useDispatch();
   return (
     <li className={s.contactListItem}>
       <div className={s.contactInfo}>
@@ -19,7 +22,7 @@ const Contact = ({ contact, handleDeleteContact }) => {
         </div>
         <Button
           className={s.contactDeleteBtn}
-          onClick={() => handleDeleteContact(contact.id)}
+          onClick={() => dispatch(deleteContact(contact.id))}
         >
           Delete
         </Button>
