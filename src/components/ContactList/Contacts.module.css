@@ -1,0 +1,65 @@
+.contactList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactListItem {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 300px;
+}
+
+.contactInfo {
+  display: flex;
+  align-items: center;
+}
+
+.contactIcons {
+  display: flex;
+  gap: 10px;
+  margin-right: 10px;
+}
+
+.icon {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.contactDetails {
+  flex-grow: 1;
+}
+
+.contactName {
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.contactNumber {
+  color: #666;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.contactDeleteBtn {
+  margin-top: 0;
+  padding: 10px 20px;
+  background-color: #ff6347;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contactDeleteBtn:hover,
+.contactDeleteBtn:focus {
+  background-color: #d32f2f;
+}

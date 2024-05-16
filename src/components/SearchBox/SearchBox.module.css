@@ -1,0 +1,31 @@
+.searchBoxWrap {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+.label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.labelText {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+}
+
+.input {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #007bff;
+}
